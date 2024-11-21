@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "csv-to-xlsx"
-version = "0.3.1"
+version = "1.0.0"
 description = ""
 authors = ["Nils Golembiewski <nilsgolembiewski@techonomy.nl>"]
 readme = "README.md"

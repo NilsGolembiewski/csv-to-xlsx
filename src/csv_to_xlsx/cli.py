@@ -11,8 +11,8 @@ from pathlib import Path
 @click.command()
 @click.argument("input_file", type=click.Path(exists=True))
 @click.argument("output_file", type=click.Path(exists=False))
-@click.option("--delimiter", type=str, default=None, help="Delimiter for the CSV file")
-def csv_to_xlsx(input_file: str, output_file: str, delimiter: Optional[str]) -> None:
+@click.option("--delimiter", type=str, default=",", help="Delimiter for the CSV file")
+def csv_to_xlsx(input_file: str, output_file: str, delimiter: str) -> None:
     df = pl.read_csv(input_file, infer_schema_length=None, separator=delimiter)
     df.write_excel(output_file)
 
