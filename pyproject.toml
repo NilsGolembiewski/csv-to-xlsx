@@ -6,7 +6,7 @@ authors = ["Nils Golembiewski <nilsgolembiewski@techonomy.nl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 click = "^8.1.7"
 xlsxwriter = "^3.2.0"
 xlsx2csv = "^0.8.3"
